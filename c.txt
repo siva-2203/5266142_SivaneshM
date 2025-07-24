@@ -3,6 +3,7 @@ in vi editor tried
 <<<<<<< HEAD
 new edit doing for merge from local
 =======
+<<<<<<< HEAD
 new line added 1
 >>>>>>> a20c25c502c41c5aece2ea0454229d6ef54214fe
 hi this is a new edit
