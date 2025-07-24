@@ -1,3 +1,4 @@
 modify
 in vi editor tried
+new edit doing for merge from local
 hi this is a new edit
