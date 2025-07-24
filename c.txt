@@ -1,4 +1,8 @@
 modify
 in vi editor tried
+<<<<<<< HEAD
 new edit doing for merge from local
+=======
+doing changes for erge from remote
+>>>>>>> a20c25c502c41c5aece2ea0454229d6ef54214fe
 hi this is a new edit
