@@ -5,5 +5,6 @@ new edit doing for merge from local
 =======
 <<<<<<< HEAD
 new line added 1
+<p>new line added for 1st branch</p>
 >>>>>>> a20c25c502c41c5aece2ea0454229d6ef54214fe
 hi this is a new edit
