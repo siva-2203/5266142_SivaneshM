@@ -4,7 +4,6 @@ in vi editor tried
 new edit doing for merge from local
 =======
 <<<<<<< HEAD
-<n>new line added for 2nd branch</n>
-<p>new line added for 1st branch</p>
+<o>new l9ne for 2nd branch</o>
 >>>>>>> a20c25c502c41c5aece2ea0454229d6ef54214fe
 hi this is a new edit
