@@ -2,3 +2,7 @@
 ![](SDLC/5266142_SivaneshM_Agile.png)
 ![](GIT/5266142_SivaneshM_Codesignal_GIT.png)
 ![](GIT/5266142_SivaneshM_Simplilearn_GIT.png)
+![](Linux/history_1.PNG)
+![](Linux/History_2.PNG)
+![](Linux/History_3.PNG)
+![](Linux/HIstory_4.PNG)
