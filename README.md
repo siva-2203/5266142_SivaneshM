@@ -6,3 +6,6 @@
 ![](Linux/History_2.PNG)
 ![](Linux/History_3.PNG)
 ![](Linux/HIstory_4.PNG)
+![](Linux/history_5.PNG)
+![](Linux/history_6.PNG)
+![](Linux/history_7.PNG)
