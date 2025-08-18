@@ -6,4 +6,4 @@ all:main.o square.o sum.o unity.o
 run:all
 	./all.exe
 clean:
-	rm -f *.o *.out
+	rm -f *.o *.out all
