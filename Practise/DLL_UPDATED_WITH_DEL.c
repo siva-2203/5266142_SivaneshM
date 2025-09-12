@@ -142,6 +142,80 @@ void insert_pos(Node *&head,int val,int pos)
     n4->prev=temp;
     return;
 }
+void del_beg(Node *&head)
+{
+    Node *temp=head;
+    head=head->next;
+    head->prev=NULL;
+    delete temp;
+    return;
+}
+void del_end(Node *&head)
+{
+    Node *temp=head;
+    while(temp->next->next!=NULL)
+    {
+        temp=temp->next;
+    }
+    Node *temp1=temp->next;
+    temp->next->prev=NULL;
+    temp->next=NULL;
+    delete temp1;
+    return;
+}
+void del_mid(Node *&head,int val)
+{
+    if(head==NULL)
+    {
+        return;
+    }
+    if(head->val==val)
+    {
+        del_beg(head);
+        return;
+    }
+    Node *temp=head;
+    while(temp->next->next!=NULL && temp->next->val!=val)
+    {
+        temp=temp->next;
+    }
+    if(temp->next->next==NULL)
+    {
+        del_end(head);
+        return;
+    }
+    temp->next=temp->next->next;
+    temp->next->prev=temp;
+    return;
+}
+void del_pos(Node *&head,int pos)
+{
+    if(head==NULL)
+    {
+        return;
+    }
+    if(pos==0)
+    {
+        del_beg(head);
+        return;
+    }
+    int count=0;
+    Node *temp=head;
+    while(temp->next->next!=NULL && count<pos-1)
+    {
+        temp=temp->next;
+        count++;
+    }
+    if(temp->next->next==NULL)
+    {
+        del_end(head);
+        return;
+    }
+    temp->next=temp->next->next;
+    temp->next->prev=temp;
+    return;
+}
+
 int main() {
     Node *n1=new Node(1);
     Node *head=n1;
@@ -178,6 +252,30 @@ int main() {
     cout<<"\nAfter Insertion:";
     insert_pos(head,6,7);
     display(head);
-    return 0;
+    cout<<"\n After deletion:";
+    del_beg(head);
+    display(head);
+    cout<<"\n After deletion:";
+    del_end(head);
+    display(head);
+    cout<<"\n After deletion:";
+    del_mid(head,8);
+    display(head);
+    cout<<"\n After deletion:";
+    del_mid(head,6);
+    display(head);
+    cout<<"\n After deletion:";
+    del_mid(head,0);
+    display(head);
+    cout<<"\n After deletion:";
+    del_pos(head,3);
+    display(head);
+    cout<<"\n After deletion:";
+    del_pos(head,0);
+    display(head);
+    cout<<"\n After deletion:";
+    del_pos(head,3);
+    display(head);
+    return 0;
 }
 
